@@ -1,0 +1,4 @@
+paramiko>=2.7.2
+pyyaml>=5.4
+jinja2>=2.11.3
+cloudinit>=20.4
