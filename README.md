@@ -1,12 +1,30 @@
 # Build-offline-LM
+# Build Offline VM Toolkit
 
-# Offline VM Build Helper
+This repository provides a modular, scriptable framework for building offline-capable virtual machine templates.  
+Primarily designed for internal DevOps teams, air-gapped data centers, and secure environments.
 
-This project assists with automated building of offline virtual machine templates using shell scripts and configuration files.
+### Supported Platforms:
+- Ubuntu 20.04 LTS
+- Ubuntu 22.04 LTS
+- CentOS 7 / 8
+- Debian 10 / 11 Minimal
 
-Supports:
-- Ubuntu 20.04 / 22.04
-- CentOS
-- Debian minimal
+### Features:
+- Automated base image configuration
+- Pre-install essential packages
+- Network optimization for offline operation
+- Template export options (qcow2, vmdk)
 
-Automation designed for internal testing environments.
+### Prerequisites:
+- Bash 5.x
+- Python 3.8+
+- Cloud-Init
+- qemu-img
+
+### Quick Start:
+
+```bash
+chmod +x build.sh
+./build.sh --platform ubuntu-22.04
+
